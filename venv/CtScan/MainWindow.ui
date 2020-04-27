@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1357</width>
+    <height>874</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>10</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>10</y>
+      <width>112</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>21</x>
+      <y>50</y>
+      <width>1321</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QWidget" name="gridWidget" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+         <horstretch>15</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="sizeConstraint">
+         <enum>QLayout::SetDefaultConstraint</enum>
+        </property>
+        <item row="2" column="0" colspan="4">
+         <widget class="Line" name="line_6">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="magnifier">
+          <property name="text">
+           <string>放大镜</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QPushButton" name="cursor_loc">
+          <property name="text">
+           <string>鼠标位置</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="eraser">
+          <property name="text">
+           <string>橡皮</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="undo">
+          <property name="text">
+           <string>撤销</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0" colspan="4">
+         <widget class="Line" name="line_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0" colspan="4">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="3">
+         <widget class="QPushButton" name="pen">
+          <property name="text">
+           <string>磁性套索</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="3">
+         <widget class="QPushButton" name="redo">
+          <property name="text">
+           <string>恢复</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0" colspan="4">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Cursory Inspector</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="2">
+         <widget class="QPushButton" name="rectangle">
+          <property name="text">
+           <string>矩形套索</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="0" colspan="4">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>鼠标所在位置坐标（x，y，z）：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="undo_all">
+          <property name="text">
+           <string>撤销全部</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLineEdit" name="cursor_x"/>
+        </item>
+        <item row="9" column="2">
+         <widget class="QLineEdit" name="cursor_z"/>
+        </item>
+        <item row="9" column="1">
+         <widget class="QLineEdit" name="cursor_y"/>
+        </item>
+        <item row="11" column="0" colspan="2">
+         <widget class="QLineEdit" name="cursor_label"/>
+        </item>
+        <item row="13" column="0" colspan="4">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>Segmentation Label</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="1" colspan="3">
+         <widget class="QSlider" name="opacity_slider">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="2" colspan="2">
+         <widget class="QLineEdit" name="cursor_label_name"/>
+        </item>
+        <item row="19" column="0" colspan="4">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>标签确认</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0" colspan="4">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>在用标签</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QPushButton" name="btn_ok">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0" colspan="4">
+         <widget class="Line" name="line_5">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0" colspan="4">
+         <widget class="QComboBox" name="comboBox"/>
+        </item>
+        <item row="20" column="1">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>确认</string>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0" colspan="4">
+         <widget class="Line" name="line_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="2">
+         <widget class="QPushButton" name="btn_cancel">
+          <property name="text">
+           <string>PushButton</string>
+          </property>
+         </widget>
+        </item>
+        <item row="20" column="3">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0" colspan="4">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>鼠标下标签（标号，标签名）</string>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QLineEdit" name="opacity"/>
+        </item>
+        <item row="1" column="0" colspan="4">
+         <widget class="QLabel" name="label_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>Main Tool Bar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0" colspan="3">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>标签透明度</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="ctMainView" native="true">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>40</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="ct_view">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>40</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string>ctView</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="Path" native="true">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>20</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="patient_info">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>30</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>patient info</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="ct_detail">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>patient</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1357</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="new_file"/>
+    <addaction name="open_file"/>
+    <addaction name="separator"/>
+    <addaction name="save"/>
+    <addaction name="save_as"/>
+    <addaction name="upload"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="redo_m"/>
+    <addaction name="redo_all_m"/>
+    <addaction name="undo_2"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="show_hide"/>
+    <addaction name="separator"/>
+    <addaction name="toolbar"/>
+    <addaction name="pathology"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>工具</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="new_file">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="open_file">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="save_as">
+   <property name="text">
+    <string>另存为</string>
+   </property>
+  </action>
+  <action name="redo_m">
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="redo_all_m">
+   <property name="text">
+    <string>撤销全部</string>
+   </property>
+  </action>
+  <action name="undo_2">
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="show_hide">
+   <property name="text">
+    <string>显示/隐藏视图</string>
+   </property>
+  </action>
+  <action name="toolbar">
+   <property name="text">
+    <string>显示/隐藏工具栏</string>
+   </property>
+  </action>
+  <action name="pathology">
+   <property name="text">
+    <string>显示/隐藏病理信息</string>
+   </property>
+  </action>
+  <action name="upload">
+   <property name="text">
+    <string>上传</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_11</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>250</x>
+     <y>51</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>412</x>
+     <y>42</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
